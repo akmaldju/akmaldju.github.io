@@ -1,0 +1,251 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css";
+
+body{
+    background-color: grey;
+  }
+  #navbar{
+    background-color: #5f991d;
+    background-color: RGB(78, 140, 112);
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    opacity: 0.9;
+  }
+  #navbar:hover{
+    opacity: 1.0;
+  }
+  #logo{
+    display: block;
+  }
+  #logo a{
+    font-family: 'Berkshire Swash', cursive;
+    color: #ddd;
+    margin: auto 7%;
+    font-size: 2.4vw;
+    font-size: 30px;
+  }
+  #logo a:hover{
+    color: #9ac6a7;
+    text-decoration: none;
+  }
+  #buttons{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 500px;
+    margin: 10px 4%;
+    
+  }
+  #buttons li{
+    display: block;
+    float: left;
+    margin: 10px 5px;
+    width: 140px;
+    height: 40px;
+    border: 2px solid #365116;
+    border-radius: 15px;
+    padding-top: 5px;
+  }
+  
+  #buttons a{
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    font-size: 1.4vw;
+    color: #ddd;
+  }
+  #buttons li:hover{
+    background-color: #86ad58;
+    background-color: #3f7a5e;
+    color: #bbb;
+    border: 2px solid #555;
+  }
+  #main{
+    background-color: #fff;
+    max-width: 1000px;
+    min-width: 200px;
+    height: 2000px;
+    height: auto;
+    margin-top: 80px;
+  }
+  #bio{
+    min-height: 300px;
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    
+  }
+  #info{
+    width: 70%;
+    border: 0px solid #f00;
+    float: left;
+    padding: 20px;
+  }
+  #info p{
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  #bio img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    float: left;
+    margin: 50px 50px;
+  
+  }
+  #portfolio{
+    height: auto;
+    width: 100%; 
+    background-color: #a8c1b6;
+    background: -webkit-linear-gradient(top left, #497c66, #a8c1b6);
+      background: -o-linear-gradient(bottom right, #497c66, #a8c1b6);
+      background: -moz-linear-gradient(bottom right, #497c66, #a8c1b6);
+      background: linear-gradient(to bottom right, #497c66, #a8c1b6);
+    margin: 0px 0 0 0;
+    padding-bottom: 50px;
+    padding: 25px 0;
+  }
+  .line{
+    height: 5px;
+    width: 40%;
+    background-color: #222;
+    margin-bottom: 30px;
+  }
+  #examples{
+    min-height: 800px;
+    height: auto;
+    width: 100%;
+    outline: 0px solid #f00;
+  }
+  #examples div{
+    min-height: 250px;
+    height: 100%;
+    width: 400px;
+    width: 40%;
+    max-width: 522px;
+    border: 2px solid #040;
+    border-radius: 10px;
+    float: left;
+    margin: 10px 50px ;
+    margin: 10px 5%;
+    opacity: 0.5;
+    background-color: #dfd;
+  }
+  #examples img{
+    height: 246px;
+    height: 100%;
+    width: 396px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  #examples div:hover{
+    opacity: 1.0;
+  }
+  #examples p{
+    color: black;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 2px;
+  }
+  #contacts{
+    padding: 25px 70px;
+  }
+  #contacts input{
+    width: 350px;
+    width: 80%;
+    height: 60px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: right;
+    float: left;
+    margin: 15px 150px 10px 50px;
+  }
+  #contacts p{
+    float: left;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  #sub{
+    margin: 25px 120px 50px 25px;
+    width: 150px;
+    height: 50px;
+    float: right;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  #social{
+    background-color: #ccc;
+    height: 250px;
+    width: 100%;
+    padding: 50px 0 0 0; 
+  }
+  #links{
+    width: 340px;
+    outline: 0px solid black;
+    padding: auto;
+  }
+  .fa {
+      padding: 25px;
+      font-size: 30px;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      margin-bottom: 4px;
+  }
+  .fa:hover {
+      opacity: 0.7;
+      text-decoration: none;
+      color: white;
+  }
+  .fa-facebook {
+      background: #3B5998;
+      color: white;
+  }
+  .fa-twitter {
+      background: #55ACEE;
+      color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  .thick-border{
+      border-radius: 20px;
+    }
+  
+  #about{
+    height: 200px;
+  }
+  #footer{
+    
+  }
+  #author p{
+      font-family: 'Gloria Hallelujah', cursive;
+      font-size: 25px;
+    }
+  
+  .clear{
+    clear: both;
+  }
