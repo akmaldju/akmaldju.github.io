@@ -4,6 +4,7 @@
 body{
     background-color: rgb(236, 224, 255);
     background-color: #793698;
+    background-image: url(img/abstract.jpg);
     background-image: url(img/abstract-1963820.jpg);
     background-size: cover;
   }
@@ -55,8 +56,7 @@ body{
   
   #buttons a{
     font-family: 'Handlee', cursive;
-    font-size: 20px;
-    font-size: 1.4vw;
+    font-size: 23px;
     color: #ddd;
   }
   #buttons li:hover{
@@ -73,25 +73,44 @@ body{
     height: auto;
     margin-top: 80px;
   }
+  #me{
+    min-height: 300px;
+    width: 100%;
+    background-color: #222;
+  }
+
   #bio{
     min-height: 300px;
     width: 100%;
     background-color: #ccc;
     margin-bottom: -15px;
   }
-  #info{
+  .info{
     width: 70%;
     border: 0px solid #f00;
     float: left;
     padding: 20px;
   }
-  #info p{
+  .info p{
     font-family: 'Handlee', cursive;
     font-weight: bold;
     font-size: 20px;
   }
+
+  .info-left{
+    width: 70%;
+    border: 0px solid #f00;
+    float: right;
+    padding: 20px;
+  }
+  .info-left p{
+    font-family: 'Raleway', sans-serif;
+    color: #aaa;
+    font-size: 2.5vw;
+    padding-top: 15px;
+  }
   
-  #bio img{
+  .about img{
     display: block;
     width: 200px;
     height: 200px;
@@ -244,6 +263,12 @@ body{
       font-size: 25px;
     }
   
+  .highlight{
+    font-weight: bold;
+    font-size: 2.8vw;
+    color: rgb(207, 34, 48);
+  }
+    
   .clear{
     clear: both;
   }
