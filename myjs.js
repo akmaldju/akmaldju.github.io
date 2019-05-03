@@ -5,8 +5,8 @@ function responsive(){
   var obj = $("body").width();
   if(obj < 1017){
     $('.info').css("width", "100%");
-    $('#bio img, #skills img').css("float", "unset");
-    $('#bio img, #skills img').css("margin", "50px auto");
+    $('#bio img, #skills img, #experience img').css("float", "unset");
+    $('#bio img, #skills img, #experience img').css("margin", "50px auto");
     $('#examples div').css("width","80%");
     $('#examples div').css("float","none");
     $('#examples div').css("margin","10px auto");
@@ -24,8 +24,8 @@ function responsive(){
      }
   else{
     $('.info').css("width", "70%");
-    $('#bio img, #skills img').css("float","left");
-    $('#bio img, #skills img').css("margin", "50px");
+    $('#bio img, #skills img, #experience img').css("float","left");
+    $('#bio img, #skills img, #experience img').css("margin", "50px");
     $('#examples div').css("width","40%");
     $('#examples div').css("float","left");
     $('#examples div').css("margin","10px 5%");
@@ -39,6 +39,7 @@ function responsive(){
     $('.info-left').css("float", "right");
     $('#me img').css("float", "right");
     $('#me img').css("margin", "50px");
+    $('#experience .left-block p').css("font-size", "22px");
   }
   
   if(obj<470){
@@ -49,6 +50,7 @@ function responsive(){
   else{
     $('#logo a').text("Akmal Djumakhodjaev");
     $('.info-left p').css("font-size","30px");
+    $('#experience .left-block p').css("font-size", "22px");
     $('.highlight').css("font-size","40px");
   }
   
