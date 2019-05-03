@@ -4,7 +4,7 @@ $( window ).resize(responsive);
 function responsive(){
   var obj = $("body").width();
   if(obj < 1017){
-    $('#info').css("width", "100%");
+    $('.info').css("width", "100%");
     $('#bio img').css("float", "none");
     $('#bio img').css("margin", "50px auto");
     $('#examples div').css("width","80%");
@@ -15,9 +15,13 @@ function responsive(){
     $('#btn1').html("A");
     $('#btn2').html("P");
     $('#btn3').html("C");
+    $('.info-left').css("width", "100%");
+    $('.info-left').css("float", "none");
+    $('#me img').css("float", "none");
+    $('#me img').css("margin", "50px auto");
      }
   else{
-    $('#info').css("width", "70%");
+    $('.info').css("width", "70%");
     $('#bio img').css("float","left");
     $('#bio img').css("margin", "50px");
     $('#examples div').css("width","40%");
@@ -28,13 +32,21 @@ function responsive(){
     $('#btn1').html("About me");
     $('#btn2').html("Portfolio");
     $('#btn3').html("Contacts");
+    $('.info-left').css("width", "70%");
+    $('.info-left').css("float", "right");
+    $('#me img').css("float", "right");
+    $('#me img').css("margin", "50px");
   }
   
   if(obj<470){
     $('#logo a').text("Akmal");
+    $('.info-left p').css("font-size","20px");
+    $('.highlight').css("font-size","25px");
   }
   else{
     $('#logo a').text("Akmal Djumakhodjaev");
+    $('.info-left p').css("font-size","30px");
+    $('.highlight').css("font-size","40px");
   }
   
   if(obj<360){
