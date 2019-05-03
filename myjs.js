@@ -5,7 +5,7 @@ function responsive(){
   var obj = $("body").width();
   if(obj < 1017){
     $('.info').css("width", "100%");
-    $('#bio img').css("float", "none");
+    $('#bio img').css("float", "unset");
     $('#bio img').css("margin", "50px auto");
     $('#examples div').css("width","80%");
     $('#examples div').css("float","none");
@@ -19,6 +19,8 @@ function responsive(){
     $('.info-left').css("float", "none");
     $('#me img').css("float", "none");
     $('#me img').css("margin", "50px auto");
+    $('#me').css("padding-bottom", "1px");
+    $('#bio').css("padding-bottom", "1px");
      }
   else{
     $('.info').css("width", "70%");
