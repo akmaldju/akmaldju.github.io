@@ -5,8 +5,8 @@ function responsive(){
   var obj = $("body").width();
   if(obj < 1017){
     $('.info').css("width", "100%");
-    $('#bio img').css("float", "unset");
-    $('#bio img').css("margin", "50px auto");
+    $('#bio img, #skills img').css("float", "unset");
+    $('#bio img, #skills img').css("margin", "50px auto");
     $('#examples div').css("width","80%");
     $('#examples div').css("float","none");
     $('#examples div').css("margin","10px auto");
@@ -19,13 +19,13 @@ function responsive(){
     $('.info-left').css("float", "none");
     $('#me img').css("float", "none");
     $('#me img').css("margin", "50px auto");
-    $('#me').css("padding-bottom", "1px");
+    $('#me').css("padding", "1px 0");
     $('#bio').css("padding-bottom", "1px");
      }
   else{
     $('.info').css("width", "70%");
-    $('#bio img').css("float","left");
-    $('#bio img').css("margin", "50px");
+    $('#bio img, #skills img').css("float","left");
+    $('#bio img, #skills img').css("margin", "50px");
     $('#examples div').css("width","40%");
     $('#examples div').css("float","left");
     $('#examples div').css("margin","10px 5%");
@@ -34,6 +34,7 @@ function responsive(){
     $('#btn1').html("About me");
     $('#btn2').html("Portfolio");
     $('#btn3').html("Contacts");
+    $('#me').css("padding", "100px 0");
     $('.info-left').css("width", "70%");
     $('.info-left').css("float", "right");
     $('#me img').css("float", "right");
