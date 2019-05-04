@@ -271,7 +271,7 @@ body{
     padding: 50px 0 0 0; 
   }
   #links{
-    width: 340px;
+    width: 510px;
     outline: 0px solid black;
     padding: auto;
   }
@@ -282,6 +282,7 @@ body{
       height: 80px;
       text-align: center;
       text-decoration: none;
+      border: 1px solid black;
       border-radius: 50%;
       margin-bottom: 4px;
   }
@@ -302,6 +303,10 @@ body{
     background: #007bb5;
     color: white;
   }
+  .fa-github {
+    background: #24292E;
+    color: white;
+  }
   .fa-instagram {
     background: #125688;
     color: white;
@@ -310,7 +315,10 @@ body{
     background: #00aff0;
     color: white;
   }
-  
+  .fa-telegram {
+    background: #279EDA;
+    color: white;
+  }
   .thick-border{
       border-radius: 20px;
     }

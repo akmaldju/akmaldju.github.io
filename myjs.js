@@ -59,10 +59,12 @@ function responsive(){
   }
   
   if(obj<360){
+    $('#social').css("height","375px");
     $('#links').css("width","170");
   }
   else{
-    $('#links').css("width","340");
+    $('#social').css("height","250px");
+    $('#links').css("width","510");
   }
 }
 
