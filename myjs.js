@@ -3,6 +3,20 @@ $( window ).resize(responsive);
 
 function responsive(){
   var obj = $("body").width();
+  if(obj <1230){
+    $('.sidebarIconToggle').css("display","unset");
+    $('#buttons').css("display","none");
+    $('#navbar').css("height","66px");
+    $('#main').css("margin-top","66px");
+    $('#logo').css("margin-top","15px");
+  }
+  else{
+    $('#navbar').css("height","80px");
+    $('#main').css("margin-top","80px");
+    $('#buttons').css("display","unset");
+    $('.sidebarIconToggle').css("display","none");
+    $('#logo').css("margin-top","20px");
+  }
   if(obj < 1017){
     $('.info').css("width", "100%");
     $('#bio img, #skills img, #experience img').css("float", "unset");
@@ -10,11 +24,6 @@ function responsive(){
     $('#examples div').css("width","80%");
     $('#examples div').css("float","none");
     $('#examples div').css("margin","10px auto");
-    $('#buttons').css("width","40%");
-    $('#buttons li').css("width","25%");
-    $('#btn1').html("A");
-    $('#btn2').html("P");
-    $('#btn3').html("C");
     $('.info-left').css("width", "100%");
     $('.info-left').css("float", "none");
     $('#me img').css("float", "none");
@@ -29,11 +38,6 @@ function responsive(){
     $('#examples div').css("width","40%");
     $('#examples div').css("float","left");
     $('#examples div').css("margin","10px 5%");
-    $('#buttons').css("width","500px");
-    $('#buttons li').css("width","140px");
-    $('#btn1').html("About me");
-    $('#btn2').html("Portfolio");
-    $('#btn3').html("Contacts");
     $('#me').css("padding", "100px 0");
     $('.info-left').css("width", "70%");
     $('.info-left').css("float", "right");
