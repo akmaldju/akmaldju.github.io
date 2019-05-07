@@ -46,6 +46,19 @@ function responsive() {
         $('#me img').css("margin", "50px");
         $('#experience .left-block p').css("font-size", "22px");
     }
+    if (obj < 520){
+        $('.fa').css("width", "42px");
+        $('.fa').css("height", "42px");
+        $('.fa').css("padding", "0");
+        $('.fa').css("padding-top", "5px");
+        $('#links').css("width", "300");
+    }
+    else{
+        $('.fa').css("width", "80px");
+        $('.fa').css("height", "80px");
+        $('.fa').css("padding", "25px");
+        $('#links').css("width", "510");
+    }
 
     if (obj < 470) {
         $('#logo a').text("Akmal");
@@ -57,15 +70,6 @@ function responsive() {
         $('.info-left p').css("font-size", "30px");
         $('#experience .left-block p').css("font-size", "22px");
         $('.highlight').css("font-size", "40px");
-    }
-
-    if (obj < 360) {
-        $('#social').css("height", "375px");
-        $('#links').css("width", "170");
-    }
-    else {
-        $('#social').css("height", "250px");
-        $('#links').css("width", "510");
     }
 }
 
