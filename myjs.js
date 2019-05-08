@@ -67,7 +67,7 @@ function responsive() {
         $('.fa').css("height", "80px");
         $('.fa').css("padding", "25px");
         $('#links').css("width", "510");
-        $('#me').css("padding-top", "15vh");
+        $('#me').css("padding-top", "25vh");
     }
 
     if (obj < 470) {
