@@ -30,6 +30,7 @@ function responsive() {
         $('#me img').css("float", "none");
         $('#me img').css("margin", "50px auto");
         $('#me').css("padding", "1px 0");
+        $('#me').css("padding-top", "25vh");
         $('#bio').css("padding-bottom", "1px");
     }
     else {
@@ -44,7 +45,14 @@ function responsive() {
         $('.info-left').css("float", "right");
         $('#me img').css("float", "right");
         $('#me img').css("margin", "50px");
+        $('#me').css("padding-top", "25vh");
         $('#experience .left-block p').css("font-size", "22px");
+    }
+    if (obj < 600){
+        $('#me').css("padding-top", "15vh");
+    }
+    else{
+        $('#me').css("padding-top", "25vh");
     }
     if (obj < 520){
         $('.fa').css("width", "42px");
@@ -52,12 +60,14 @@ function responsive() {
         $('.fa').css("padding", "0");
         $('.fa').css("padding-top", "5px");
         $('#links').css("width", "300");
+        $('#me').css("padding-top", "10vh");
     }
     else{
         $('.fa').css("width", "80px");
         $('.fa').css("height", "80px");
         $('.fa').css("padding", "25px");
         $('#links').css("width", "510");
+        $('#me').css("padding-top", "15vh");
     }
 
     if (obj < 470) {
