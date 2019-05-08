@@ -31,6 +31,7 @@ function responsive() {
         $('#me img').css("margin", "50px auto");
         $('#me').css("padding", "1px 0");
         $('#me').css("padding-top", "25vh");
+        $('#experience img').css("margin-top", "5px");
         $('#bio').css("padding-bottom", "1px");
     }
     else {
@@ -46,6 +47,7 @@ function responsive() {
         $('#me img').css("float", "right");
         $('#me img').css("margin", "50px");
         $('#me').css("padding-top", "25vh");
+        $('#experience img').css("margin-top", "50px");
         $('#experience .left-block p').css("font-size", "22px");
     }
     if (obj < 600){
