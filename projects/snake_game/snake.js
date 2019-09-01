@@ -8,10 +8,12 @@ const ctx = cvs.getContext("2d");
 
 const box = 32;
 
+let interval = 150;
+
 const ground = new Image();
 ground.src = "img/ground.png";
 
-const foodImg = new Image();
+let foodImg = new Image();
 foodImg.src = "img/food.png";
 
 
@@ -25,6 +27,7 @@ let food = {
     x : Math.floor(Math.random()*17+1) * box,
     y : Math.floor(Math.random()*15+3) * box
 }
+
 
 let score = 0;
 
@@ -64,16 +67,24 @@ function draw(){
         ctx.strokeRect(snake[i].x,snake[i].y,box,box);
     }
 
+
     ctx.drawImage(foodImg, food.x, food.y);
+
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
 
     if(snakeX == food.x && snakeY == food.y){
+        foodImg.src = "img/food.png";
         score++;
         food = {
             x : Math.floor(Math.random()*17+1) * box,
             y : Math.floor(Math.random()*15+3) * box
+        }
+        for(let i=0; i<snake.length; i++){
+            if(food.x == snake[i].x && food.y == snake[i].y){
+                foodImg.src = "img/food_2.png";
+            }
         }
          
     }else{
@@ -109,4 +120,4 @@ function draw(){
     ctx.fillText(score,2*box,1.6*box);
 }
 
-let game = setInterval(draw,150);
+let game = setInterval(draw,interval);
